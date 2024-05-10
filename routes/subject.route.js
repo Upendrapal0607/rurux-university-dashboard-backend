@@ -3,7 +3,7 @@ const { Auth } = require("../middleware/auth.midleware");
 const { subjectModel } = require("../models/subject.model");
 
 const subjectRoute = express.Router();
-subjectRoute.use(Auth);
+// subjectRoute.use(Auth);
 
 subjectRoute.get("/", async (req, res) => {
   try {

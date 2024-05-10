@@ -6,7 +6,7 @@ const { studentModel } = require("../models/student.model");
 require("dotenv").config();
 
 const studentRoute = express.Router();
-studentRoute.use(Auth);
+// studentRoute.use(Auth);
 studentRoute.get("/", async (req, res) => {
   try {
     const studentList = await studentModel.find();

@@ -3,7 +3,7 @@ const { Auth } = require("../middleware/auth.midleware");
 const { streamModel } = require("../models/stream.model");
 
 const streamRoute = express.Router();
-streamRoute.use(Auth);
+// streamRoute.use(Auth);
 
 streamRoute.get("/", async (req, res) => {
   try {

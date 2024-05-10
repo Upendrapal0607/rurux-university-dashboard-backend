@@ -2,7 +2,8 @@ const express = require("express");
 const { Auth } = require("../middleware/auth.midleware");
 const { marksModel } = require("../models/marks.model");
 const markRoute = express.Router();
-markRoute.use(Auth);
+
+// markRoute.use(Auth);
 
 markRoute.get("/", async (req, res) => {
   try {
